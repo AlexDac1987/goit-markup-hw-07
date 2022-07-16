@@ -2,7 +2,7 @@
   padding-top: 0px;
 }
 
-.about-title {
+.about__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -12,18 +12,18 @@
   margin-bottom: 50px;
 }
 
-.about-list {
+.pic-list {
   display: flex;
 }
 
-.about-item {
+.pic-lis__item {
   position: relative;
   &:not(:first-child) {
     margin-left: 30px;
   }
 }
 
-.about-item-description {
+.pic-lis__description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;

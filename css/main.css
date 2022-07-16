@@ -315,11 +315,11 @@ body {
   display: flex;
 }
 
-.header-nav {
+.nav {
   display: flex;
 }
 
-.header-logo {
+.logo {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
@@ -327,6 +327,9 @@ body {
   letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
+}
+
+.nav__logo {
   margin-right: 93px;
 }
 
@@ -335,20 +338,20 @@ body {
   font-family: "Raleway";
 }
 
-.header-item {
+.menu__item {
   margin-left: auto;
   padding: 8px 0px;
 }
-.header-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-list {
+.menu {
   display: flex;
 }
 
-.header-link,
-.contacts-email {
+.menu__link,
+.contacts__email {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -357,17 +360,17 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-link {
+.menu__link {
   position: relative;
 }
-.header-link:hover, .header-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
-.header-active {
+.header__active {
   color: var(--accent-color);
 }
-.header-active::after {
+.header__active::after {
   content: "";
   display: block;
   position: absolute;
@@ -380,11 +383,14 @@ body {
 
 .contacts {
   display: flex;
-  margin-left: 305px;
   padding: 8px 0px;
 }
 
-.contacts-list {
+.contacts__header {
+  margin-left: 305px;
+}
+
+.contacts__list {
   display: flex;
   justify-content: start;
   align-items: center;
@@ -393,17 +399,17 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-list-icon {
+.contacts__icon {
   fill: currentColor;
   margin-right: 10px;
 }
-.contacts-list-icon .contacts-list, .contacts-list-icon:hover,
-.contacts-list-icon .contacts-list, .contacts-list-icon:focus {
+.contacts__icon .contacts-list, .contacts__icon:hover,
+.contacts__icon .contacts-list, .contacts__icon:focus {
   fill: var(--accent-color);
 }
 
-.contacts-phone,
-.contacts-email {
+.contacts__phone,
+.contacts__email {
   display: flex;
   align-items: center;
   font-weight: 500;
@@ -413,9 +419,9 @@ body {
   color: #757575;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-phone:hover, .contacts-phone:focus,
-.contacts-email:hover,
-.contacts-email:focus {
+.contacts__phone:hover, .contacts__phone:focus,
+.contacts__email:hover,
+.contacts__email:focus {
   color: var(--accent-color);
 }
 
@@ -432,7 +438,7 @@ body {
   margin-right: auto;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -444,7 +450,7 @@ body {
   margin: 0 auto 30px;
 }
 
-.hero-button {
+.hero__button {
   min-width: 200px;
   height: 50px;
   font-family: inherit;
@@ -468,7 +474,7 @@ body {
   padding-top: 0px;
 }
 
-.about-title {
+.about__title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -478,18 +484,18 @@ body {
   margin-bottom: 50px;
 }
 
-.about-list {
+.pic-list {
   display: flex;
 }
 
-.about-item {
+.pic-lis__item {
   position: relative;
 }
-.about-item:not(:first-child) {
+.pic-lis__item:not(:first-child) {
   margin-left: 30px;
 }
 
-.about-item-description {
+.pic-lis__description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.17;
@@ -707,7 +713,7 @@ body {
   margin-right: auto;
 }
 
-.hero-title {
+.hero__title {
   width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -719,7 +725,7 @@ body {
   margin: 0 auto 30px;
 }
 
-.hero-button {
+.hero__button {
   min-width: 200px;
   height: 50px;
   font-family: inherit;
@@ -961,7 +967,7 @@ body {
   text-decoration: none;
 }
 
-.advantages-title {
+.benefits-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -971,16 +977,16 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-list {
+.benefits-list {
   display: flex;
 }
 
-.advantages-item:not(:last-child) {
+.benefits-list__item:not(:last-child) {
   margin-right: 30px;
   max-width: 270px;
 }
 
-.advantages-logo-box {
+.benefits-list__box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -991,11 +997,7 @@ body {
   margin-bottom: 30px;
 }
 
-.advantages-title {
-  margin-bottom: 10px;
-}
-
-.advantages-content {
+.benefits-list__content {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;

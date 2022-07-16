@@ -1,4 +1,4 @@
-.advantages-title {
+.benefits-list__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -8,16 +8,16 @@
   text-transform: uppercase;
 }
 
-.advantages-list {
+.benefits-list {
   display: flex;
 }
 
-.advantages-item:not(:last-child) {
+.benefits-list__item:not(:last-child) {
   margin-right: 30px;
   max-width: 270px;
 }
 
-.advantages-logo-box {
+.benefits-list__box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,11 +28,7 @@
   margin-bottom: 30px;
 }
 
-.advantages-title {
-  margin-bottom: 10px;
-}
-
-.advantages-content {
+.benefits-list__content {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
