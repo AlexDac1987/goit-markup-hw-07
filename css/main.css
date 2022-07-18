@@ -745,8 +745,8 @@ body {
   border-radius: 4px;
 }
 
-.footer-adress:hover,
-.footer-adress:focus {
+.footer-address:hover,
+.footer-address:focus {
   color: var(--accent-color);
 }
 
@@ -800,6 +800,7 @@ body {
 
 .footer-email {
   font-weight: 400;
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
